@@ -1,0 +1,52 @@
+body
+{
+	background-color:white;
+	width: 100%;
+}
+h1
+{
+	color:black;
+	text-align:center;
+	font-family: "Arial";
+}
+p
+{
+	font-family:"Arial";
+	font-size:20px;
+	padding-left: 40px;
+}
+button {
+	border-width:0px;
+	text-align: center;
+	color:white;
+	height: 30px;
+	width: inherit;
+	padding: 0;
+}
+ul
+{
+	list-style-type:none;
+	padding:0;
+	margin: 0 auto;
+	width: 420px;
+}
+li
+{
+	display:inline;
+	padding-left:1px;
+	padding-right:1px;
+	width: 100px;
+}
+#mainDiv {
+	width: 70%;
+	margin: 0 auto;
+	background-color:#FFF8FF;
+}
+#firstButton {
+	background-color:#5C005C;
+	border-width:0px;
+	text-align: center;
+	color:white;
+	margin-left: 40px;
+	width: 100px;
+}
