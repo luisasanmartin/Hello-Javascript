@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Random Number Generator</title>
 <link rel="stylesheet" href="practiceSS.css" />
 </head>
 <body>
 
+<div>
+	<p id = "instruction" >
+		Press spacebar to generate number
+	</p id = "instruction"> 
+</div>
+
 <div id = "mainDiv" >
-
-<ul>
-<li><button onclick="myFunction()">Home</button></li>
-<li><button onclick="myFunction()">News</button></li>
-<li><button onclick="myFunction()">Contact</button></li>
-<li><button onclick="myFunction()">About</button></li>
-</ul>
-
+	<p id = "number"></p>
 </div id = "mainDiv">
-
-<h1>My First Web Page </h1>
-
-
-
-<p id="demo">My First Paragraph</p>
-
-<button id= "firstButton" onclick="myFunction()">Try it</button>
-
 
 
 <script>
+window.onload = function() {
+	window.addEventListener('keypress', function (e) {
+		if (e.keyCode == 32) {
+			myFunction();
+		}
+	}); 
+}
 function myFunction() {
-	document.getElementById("firstButton").innerHTML = "New";
+	document.getElementById("number").innerHTML = Math.floor((Math.random() * 100) + 1);
 }
 </script>
 </body>
